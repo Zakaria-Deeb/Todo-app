@@ -1,0 +1,161 @@
+.App {
+    text-align: center;
+}
+
+.todoInput {
+    width: 50%;
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+
+.Title {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin-right: 20px;
+}
+
+.Title::placeholder {
+    color: transparent;
+}
+
+.Title:placeholder-shown~.Title-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.Title-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.Title:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(43deg, #FFCC70 0%, #c850c0 46%, #4158d0 100%);
+    border-image-slice: 1;
+}
+
+.Title:focus~.Title-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #FFCC70;
+    font-weight: 700;
+}
+
+.Title:required,
+.Title:invalid {
+    box-shadow: none;
+}
+
+.Description {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin-left: 20px;
+}
+
+.Description::placeholder {
+    color: transparent;
+}
+
+.Description:placeholder-shown~.Description-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.Description-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #ccc;
+    margin-left: 20px;
+}
+
+.Description:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(43deg, #FFCC70 0%, #c850c0 46%, #4158d0 100%);
+    border-image-slice: 1;
+}
+
+.Description:focus~.Description-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #FFCC70;
+    font-weight: 700;
+}
+
+.Description:required,
+.Description:invalid {
+    box-shadow: none;
+}
+
+
+/* CSS */
+
+.Submit {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 2.5rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 40px;
+}
+
+.Submit:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    .Submit {
+        padding: 0 2.6rem;
+    }
+}
